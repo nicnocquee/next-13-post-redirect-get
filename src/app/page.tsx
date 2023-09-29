@@ -72,15 +72,15 @@ export default function Home() {
             Submit
           </button>
         </form>
-
-        <a
-          className="underline"
-          href="https://github.com/nicnocquee/next-13-post-redirect-get"
-          target="_blank"
-        >
-          Repo here
-        </a>
       </div>
+
+      <a
+        className="px-4 py-2 bg-blue-500 text-white"
+        href="https://github.com/nicnocquee/next-13-post-redirect-get"
+        target="_blank"
+      >
+        Repo here
+      </a>
     </main>
   );
 }
