@@ -28,5 +28,7 @@ export async function POST(request: Request) {
 
   console.dir(url.toString());
 
-  return NextResponse.redirect(url, 303); // default is 307
+  // default is 307
+  // need to use 303 to change the rediect method to GET
+  return NextResponse.redirect(url, 303);
 }
