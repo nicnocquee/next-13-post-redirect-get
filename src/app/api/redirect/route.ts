@@ -14,7 +14,7 @@ export async function GET(request: Request) {
 
   console.dir(url.toString());
 
-  redirect(url.toString()); // this work, redirecting to /success?message=something page
+  redirect(url.toString());
 }
 
 export async function POST(request: Request) {
@@ -28,6 +28,5 @@ export async function POST(request: Request) {
 
   console.dir(url.toString());
 
-  return NextResponse.redirect(url, 303); // this doesn't work
-  //redirect(url.toString()); // this also doesn't work
+  return NextResponse.redirect(url, 303); // default is 307
 }
